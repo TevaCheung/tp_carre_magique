@@ -157,7 +157,7 @@ SORTIE : Les coordonnees du jeton apres son deplacement
 void remplircase(int **carre,casejeton *jeton,int i){
 /*
 BUT : Remplir la case d un tableau avec le bon nombre
-ENTREE : Le tableau, la case actuelle
+ENTREE : Le tableau, la case actuelle, le nombre à inserer
 SORTIE : La case remplie
 
 */
