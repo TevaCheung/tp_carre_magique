@@ -56,6 +56,7 @@ int main()
     affiche(carre);
 
     free(carre);
+    free(pjeton);
     return 0;
 }
 
