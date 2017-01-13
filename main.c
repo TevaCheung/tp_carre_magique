@@ -38,18 +38,18 @@ int main()
 
     for (i=0;i<(TAILLE)*(TAILLE);i++){
         if (i==0){ //Si c'est le premier remplissage, on cherche la case au dessus du milieu...
-            remplircase(carre,pjeton,i); //...et on y place 1
+            remplircase(carre,pjeton,i+1); //...et on y place 1
         }else{ //Si ce n'est pas le premier remplissage...
             case_hd(pjeton);
 
             //la case est vide, on la remplit
             if (casevide(carre,pjeton)){
-                remplircase(carre,pjeton,i);
+                remplircase(carre,pjeton,i+1);
             }else{
                 //Sinon on cherche la premiere case en haut a gauche de libre...
                 case_hg(carre,pjeton);
                 //... et on y met place la valeur
-                remplircase(carre,pjeton,i);
+                remplircase(carre,pjeton,i+1);
             }
         }
     }
@@ -161,5 +161,5 @@ ENTREE : Le tableau, la case actuelle, le nombre à inserer
 SORTIE : La case remplie
 
 */
-    carre[jeton->ligne][jeton->col]=i+1;
+    carre[jeton->ligne][jeton->col]=i;
 }
